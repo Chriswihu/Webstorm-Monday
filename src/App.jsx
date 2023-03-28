@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
 import './styles/App.css'
 import Adress from './components/adress.jsx'
 import Personlist from './components/personlist.jsx'
@@ -20,10 +20,16 @@ function App() {
         street: "Byvej",
         strnr: "32"
     }
+
+    const [count, setCount] = useState(0);
+    useEffect(() => {
+        console.log("useEffect called")
+        // setCount(1)
+    }, [])
     return (
         <div style={background}>
-            {/*<p>This is a paragraph</p>*/}
-            {/*<Personlist persons={persons}/>*/}
+            <p>This is a paragraph</p>
+            <Personlist persons={persons}/>
             {/*<Adress addr={address}/>*/}
             {/*<Person name={name} title="This is a Title"/>*/}
             {/*<Adress city = "Lyngby" street = "Byvej" strnr = "32"/>*/}
