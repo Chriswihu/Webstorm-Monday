@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from "prop-types";
 
-function Adress(addr) {
+function Address(addr) {
     const {city, street, strnr} = addr;
     return (
         <div>
@@ -17,11 +17,11 @@ function Adress(addr) {
     );
 }
 
-Adress.propTypes = {
+Address.propTypes = {
     address: PropTypes.exact({
         city: PropTypes.string.isRequired,
         street: PropTypes.string.isRequired,
         strnr: PropTypes.string.isRequired
     })
 }
-export default Adress;
+export default Address;

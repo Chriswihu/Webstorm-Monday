@@ -1,5 +1,5 @@
 import React from 'react';
-import Person from './person.jsx';
+import Person from './Person.jsx';
 import PropTypes from "prop-types";
 
 function Personlist({persons}) {
